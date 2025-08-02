@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Layout from '@/components/Layout'
 import InputUsername from '@/components/InputUsername'
 
@@ -6,11 +7,11 @@ export default function Home() {
     <Layout>
       <div className="text-center space-y-8">
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold text-white font-sans">
-            GitIn
-          </h1>
+          <div className="flex justify-center mb-6">
+            <Image src="/logo.png" alt="GitIn" width={300} height={300} />
+          </div>
           <p className="text-xl text-charcoal-300">
-            Veja seu perfil técnico profissional com base no GitHub
+            Transforme seu histórico de código em um perfil profissional de verdade.
           </p>
         </div>
         

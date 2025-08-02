@@ -6,7 +6,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'GitIn Web App',
-  description: 'Modern web application built with Next.js 15',
+  description: 'Transforme seu histórico de código em um perfil profissional de verdade.',
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({
@@ -15,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className="dark">
+    <html lang="pt-br" className="dark">
       <body className={inter.className}>{children}</body>
     </html>
   )

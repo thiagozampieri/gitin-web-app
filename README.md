@@ -1,5 +1,7 @@
 # GitIn Web App
 
+Transforme seu histórico de código em um perfil profissional de verdade.
+
 Aplicação web moderna construída com Next.js 15, TypeScript e Tailwind CSS.
 
 ## 🚀 Tecnologias
@@ -8,6 +10,7 @@ Aplicação web moderna construída com Next.js 15, TypeScript e Tailwind CSS.
 - **TypeScript** - Tipagem estática
 - **Tailwind CSS** - Framework CSS utilitário
 - **shadcn/ui** - Componentes UI reutilizáveis
+- **Amazon Q** - Assistente de IA para desenvolvimento
 - **Tema Escuro** - Design com tons de azul royal e cinza carvão
 
 ## 🎨 Design System
