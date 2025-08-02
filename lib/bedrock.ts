@@ -63,8 +63,8 @@ Retorne APENAS um JSON válido com:
       seniorityLevel: data.totalStars > 100 ? "Sênior - Alto engajamento da comunidade" : data.totalStars > 20 ? "Pleno - Projetos com boa visibilidade" : "Júnior - Perfil em desenvolvimento",
       badges: [
         ...data.topLanguages.slice(0, 3).map(l => l.language),
-        data.projectsWithDescription > data.repos.length * 0.7 ? "Documentação" : null,
-        data.recentProjects > 3 ? "Ativo" : null
+        ...(data.projectsWithDescription > data.repos.length * 0.7 ? ["Documentação"] : []),
+        ...(data.recentProjects > 3 ? ["Ativo"] : []),
       ].filter(Boolean).slice(0, 5),
       kpiInterpretation: `Perfil ${data.recentProjects > 5 ? 'muito ativo' : 'moderadamente ativo'} com ${data.totalStars} stars acumuladas. ${data.projectsWithDescription > data.repos.length * 0.5 ? 'Boa prática de documentação.' : 'Pode melhorar a documentação dos projetos.'}`
     }
